@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2rem;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card{
+    margin: 10px;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  margin-top: 60px;
+  height: 450px;
+  width: 380px;
+  position: relative;
+  border-radius: 12px;
+  transition: 0.15s linear all;
+}
+.card__body:hover {
+  background-color: #5ec1d4;
+  color: white;
+}
+
+.card__body h2 {
+  margin: 20px 0 10px 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.card__body h1 {
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.card__body p {
+  width: 80%;
+  font-size: 16px;
+}
+img {
+  width: 250px;
+  position: absolute;
+  top: -60px;
+}
+
+.card__btn {
+  padding: 0.75rem 2.5rem;
+  background-color: #ffb331;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 4px 4px 7px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.15s linear all;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+
+.card__btn:hover {
+  transform: translateY(-4px);
+  background-color: #f3aa2b;
+}
+.card__btn:active {
+  transform: translateY(-2px);
+  background-color: #e69c1d;
+}
+
+.card__price-off {
+  position: absolute;
+  background-color: #ff2400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  padding: 0.5rem 1.25rem;
+  letter-spacing: 1.2px;
+  top: -15px;
+  right: -15px;
+  color: white;
+}
+
+@media (min-width: 0) and (max-width: 475px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (min-width: 476PX) and (max-width: 779PX) {
+  .wrapper {
+    width: 100%;
+  }
+  .card{
+      width: 45%;
+  }
+}
+@media (min-width: 780PX) and (max-width: 920PX) {
+  .wrapper {
+    width: 100%;
+  }
+  .card{
+      width: 45%;
+  }
+}
+@media (min-width: 921PX) and (max-width: 1400PX) {
+  .wrapper {
+    width: 100%;
+  }
+  .card{
+      width: 30%;
+  }
+}
